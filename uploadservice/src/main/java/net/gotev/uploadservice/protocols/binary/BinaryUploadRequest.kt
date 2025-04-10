@@ -61,4 +61,18 @@ class BinaryUploadRequest(context: Context, serverUrl: String) :
             "This upload method does not support adding parameters"
         }
     }
+
+    override fun getTaskParameters(): net.gotev.uploadservice.UploadTaskParameters {
+        val params = super.getTaskParameters()
+        encryptionKeyBase64?.let { params.set("encryptionKey", it) }
+        encryptionNonceBase64?.let { params.set("encryptionNonce", it) }
+        return params
+    }
+
+
+    fun setEncryption(keyBase64: String, nonceBase64: String): BinaryUploadRequest {
+        this.encryptionKeyBase64 = keyBase64
+        this.encryptionNonceBase64 = nonceBase64
+        return this
+    }
 }
