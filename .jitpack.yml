@@ -3,15 +3,20 @@ jdk:
 
 before_install:
   - chmod +x gradlew
+  - ./gradlew --version
+  - ls -la
 
 install:
-  - ./gradlew :uploadservice:assembleRelease
-  - ./gradlew :uploadservice:generatePomFileForReleasePublication
+  - ./gradlew :uploadservice:clean
+  - ./gradlew :uploadservice:assembleRelease --stacktrace
+  - ./gradlew :uploadservice:generatePomFileForReleasePublication --stacktrace
 
 build:
-  - ./gradlew :uploadservice:publishReleasePublicationToMavenLocal
+  - ./gradlew :uploadservice:publishReleasePublicationToMavenLocal --stacktrace
+  - ls -la uploadservice/build/outputs/aar/
 
 env:
   ANDROID_HOME: /usr/local/android-sdk
   ANDROID_SDK_ROOT: /usr/local/android-sdk
   ANDROID_NDK_HOME: /usr/local/android-ndk
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
