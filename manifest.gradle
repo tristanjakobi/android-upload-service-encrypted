@@ -9,13 +9,13 @@ ext {
     library_licenses = ["Apache-2.0"]
     library_licenses_url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
     library_project_group = 'com.github.tristanjakobi.android-upload-service-encrypted'
-    slibrary_version = '5.0.0.4'
+    library_version = '5.0.0.5'
     version_code = 56
     min_sdk = 21
     target_sdk = 34
 
     // Gradle classpath dependencies versions
-    kotlin_version = '1.8.21'
+    kotlin_version = '1.9.0'
     gradle_version = '8.1.1'
     kotlin_lint_version = '9.0.0'
 
