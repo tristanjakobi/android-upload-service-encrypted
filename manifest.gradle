@@ -16,7 +16,8 @@ ext {
 
     // Gradle classpath dependencies versions
     kotlin_version = '1.9.0'
-    gradle_version = '8.1.1'
+    gradle_version = '8.2'
+    android_gradle_plugin_version = '8.2.0'
     kotlin_lint_version = '9.0.0'
 
     // Library and app testing dependencies versions
@@ -28,7 +29,7 @@ ext {
     androidx_test_ext_truth_version = '1.5.0'
     truth_version = '1.0.1'
     androidx_test_espresso_version = '3.5.1'
-    mock_web_server_version = '4.9.0'
+    mock_web_server_version = '4.11.0'
 
     // Library and app dependencies versions
     androidx_lifecycle_version = '2.6.1'
