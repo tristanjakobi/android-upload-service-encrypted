@@ -18,7 +18,7 @@ project.ext {
 }
 // end - do not modify this if your project is on github
 
-group = 'com.github.tristanjakobi'
+group = 'com.github.tristanjakobi.android-upload-service-encrypted'
 version = library_version
 
 android {
@@ -97,7 +97,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = 'com.github.tristanjakobi'
+                groupId = 'com.github.tristanjakobi.android-upload-service-encrypted'
                 artifactId = 'android-upload-service-encrypted'
                 version = library_version
 
