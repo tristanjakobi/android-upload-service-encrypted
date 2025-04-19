@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.logger
+package com.levin.uploadservice.logger
 
 object UploadServiceLogger {
     private var logLevel = LogLevel.Off

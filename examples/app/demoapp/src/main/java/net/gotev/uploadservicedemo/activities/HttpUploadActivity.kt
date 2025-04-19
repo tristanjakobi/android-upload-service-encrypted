@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.activities
+package com.levin.uploadservicedemo.activities
 
 import android.os.Bundle
 import android.view.Menu
@@ -9,13 +9,13 @@ import android.widget.Spinner
 import androidx.core.app.NavUtils
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import net.gotev.recycleradapter.AdapterItem
-import net.gotev.recycleradapter.RecyclerAdapter
-import net.gotev.uploadservicedemo.R
-import net.gotev.uploadservicedemo.dialogs.AddFileParameterNameDialog
-import net.gotev.uploadservicedemo.dialogs.AddNameValueDialog
-import net.gotev.uploadservicedemo.utils.UploadItemUtils
-import net.gotev.uploadservicedemo.views.AddItem
+import com.levin.recycleradapter.AdapterItem
+import com.levin.recycleradapter.RecyclerAdapter
+import com.levin.uploadservicedemo.R
+import com.levin.uploadservicedemo.dialogs.AddFileParameterNameDialog
+import com.levin.uploadservicedemo.dialogs.AddNameValueDialog
+import com.levin.uploadservicedemo.utils.UploadItemUtils
+import com.levin.uploadservicedemo.views.AddItem
 
 abstract class HttpUploadActivity : FilePickerActivity() {
 

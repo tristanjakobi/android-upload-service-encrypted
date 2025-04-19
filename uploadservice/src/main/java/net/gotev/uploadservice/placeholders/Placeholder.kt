@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.placeholders
+package com.levin.uploadservice.placeholders
 
 enum class Placeholder(val value: String) {
     /**

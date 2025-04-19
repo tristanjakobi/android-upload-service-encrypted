@@ -1,11 +1,12 @@
-package net.gotev.uploadservice.protocols.binary
+package com.levin.uploadservice.protocols.binary
 
 import android.content.Context
-import net.gotev.uploadservice.HttpUploadRequest
-import net.gotev.uploadservice.UploadTask
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.logger.UploadServiceLogger.NA
+import com.levin.uploadservice.HttpUploadRequest
+import com.levin.uploadservice.UploadTask
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.logger.UploadServiceLogger.NA
+import com.levin.uploadservice.persistence.PersistableData
 import java.io.FileNotFoundException
 import java.io.IOException
 
@@ -18,6 +19,9 @@ import java.io.IOException
  */
 class BinaryUploadRequest(context: Context, serverUrl: String) :
     HttpUploadRequest<BinaryUploadRequest>(context, serverUrl) {
+
+    private var encryptionKeyBase64: String? = null
+    private var encryptionNonceBase64: String? = null
 
     override val taskClass: Class<out UploadTask>
         get() = BinaryUploadTask::class.java
@@ -62,13 +66,12 @@ class BinaryUploadRequest(context: Context, serverUrl: String) :
         }
     }
 
-    override fun getTaskParameters(): net.gotev.uploadservice.UploadTaskParameters {
-        val params = super.getTaskParameters()
-        encryptionKeyBase64?.let { params.set("encryptionKey", it) }
-        encryptionNonceBase64?.let { params.set("encryptionNonce", it) }
+    override fun getAdditionalParameters(): PersistableData {
+        val params = PersistableData()
+        encryptionKeyBase64?.let { params.putString("encryptionKey", it) }
+        encryptionNonceBase64?.let { params.putString("encryptionNonce", it) }
         return params
     }
-
 
     fun setEncryption(keyBase64: String, nonceBase64: String): BinaryUploadRequest {
         this.encryptionKeyBase64 = keyBase64

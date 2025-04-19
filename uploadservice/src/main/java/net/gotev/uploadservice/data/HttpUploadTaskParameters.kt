@@ -1,9 +1,9 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import net.gotev.uploadservice.persistence.Persistable
-import net.gotev.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.persistence.Persistable
+import com.levin.uploadservice.persistence.PersistableData
 import java.util.ArrayList
 
 /**

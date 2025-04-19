@@ -1,11 +1,11 @@
-package net.gotev.uploadservice.schemehandlers
+package com.levin.uploadservice.schemehandlers
 
 import android.content.Context
 import android.net.Uri
 import android.provider.OpenableColumns
-import net.gotev.uploadservice.extensions.APPLICATION_OCTET_STREAM
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.logger.UploadServiceLogger.NA
+import com.levin.uploadservice.extensions.APPLICATION_OCTET_STREAM
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.logger.UploadServiceLogger.NA
 import java.io.File
 import java.io.IOException
 

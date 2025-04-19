@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-parcelize'
 apply plugin: "org.jlleitschuh.gradle.ktlint"
 apply plugin: 'kotlin-kapt'
+apply plugin: 'maven-publish'
 
 // start - do not modify this if your project is on github
 project.ext {
@@ -17,11 +18,11 @@ project.ext {
 }
 // end - do not modify this if your project is on github
 
-group = library_project_group
+group = 'com.github.tristanjakobi'
 version = library_version
 
 android {
-    namespace "net.gotev.uploadservice"
+    namespace "com.levin.uploadservice"
 
     defaultConfig {
         compileSdk target_sdk
@@ -85,4 +86,52 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
-apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'
+// Create sources JAR task
+task releaseSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
+// Configure publishing
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.tristanjakobi'
+                artifactId = 'android-upload-service-encrypted'
+                version = library_version
+
+                // Main artifact
+                artifact("$buildDir/outputs/aar/uploadservice-release.aar")
+                
+                // Sources JAR
+                artifact releaseSourcesJar
+
+                // Configure POM
+                pom {
+                    name = 'Android Upload Service'
+                    description = 'Easily upload files in the background with automatic Android Notification Center progress indication.'
+                    url = 'https://github.com/tristanjakobi/android-upload-service-encrypted'
+                    licenses {
+                        license {
+                            name = 'The Apache Software License, Version 2.0'
+                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'tristanjakobi'
+                            name = 'Tristan Jakobi'
+                            email = 'tristan@jakobi.dev'
+                        }
+                    }
+                    scm {
+                        connection = 'scm:git:github.com/tristanjakobi/android-upload-service-encrypted.git'
+                        developerConnection = 'scm:git:ssh://github.com/tristanjakobi/android-upload-service-encrypted.git'
+                        url = 'https://github.com/tristanjakobi/android-upload-service-encrypted/tree/master'
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,8 @@
-package net.gotev.uploadservice.ftp
+package com.levin.uploadservice.ftp
 
 import android.content.Context
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.extensions.setOrRemove
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.extensions.setOrRemove
 
 // properties associated to each file
 private const val PROPERTY_REMOTE_PATH = "ftpRemotePath"

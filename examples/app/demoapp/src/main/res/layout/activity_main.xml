@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:layout_margin="@dimen/activity_horizontal_margin">
 
-        <net.gotev.uploadservicedemo.views.AddItem
+        <com.levin.uploadservicedemo.views.AddItem
             android:id="@+id/multipart_upload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             app:titleText="@string/new_multipart_upload"
             app:colorFilter="@color/colorAccent"/>
 
-        <net.gotev.uploadservicedemo.views.AddItem
+        <com.levin.uploadservicedemo.views.AddItem
             android:id="@+id/binary_upload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             app:titleText="@string/new_binary_upload"
             app:colorFilter="@color/colorPrimary"/>
 
-        <net.gotev.uploadservicedemo.views.AddItem
+        <com.levin.uploadservicedemo.views.AddItem
             android:id="@+id/ftp_upload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

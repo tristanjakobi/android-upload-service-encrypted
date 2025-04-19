@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.persistence
+package com.levin.uploadservice.persistence
 
 import android.annotation.SuppressLint
 import android.os.Bundle

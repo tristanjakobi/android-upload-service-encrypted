@@ -1,7 +1,7 @@
-package net.gotev.uploadservice.protocols.multipart
+package com.levin.uploadservice.protocols.multipart
 
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.extensions.setOrRemove
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.extensions.setOrRemove
 
 // properties associated to each file
 private const val PROPERTY_PARAM_NAME = "multipartParamName"

@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.extensions
+package com.levin.uploadservice.extensions
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent
@@ -9,14 +9,14 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.os.Build.VERSION.SDK_INT
 import android.os.Parcelable
-import net.gotev.uploadservice.UploadService
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.UploadTask
-import net.gotev.uploadservice.data.UploadNotificationConfig
-import net.gotev.uploadservice.data.UploadTaskParameters
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.logger.UploadServiceLogger.NA
-import net.gotev.uploadservice.observer.task.UploadTaskObserver
+import com.levin.uploadservice.UploadService
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.UploadTask
+import com.levin.uploadservice.data.UploadNotificationConfig
+import com.levin.uploadservice.data.UploadTaskParameters
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.logger.UploadServiceLogger.NA
+import com.levin.uploadservice.observer.task.UploadTaskObserver
 import java.lang.IllegalStateException
 
 // constants used in the intent which starts this service

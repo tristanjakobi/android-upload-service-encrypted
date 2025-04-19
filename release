@@ -1,14 +1,52 @@
 #!/bin/bash -e
-echo "Releasing on Maven Central ..."
-./gradlew clean test publish -PmavSigning=true -PmavPublishToRemoteRepo=true --max-workers 1
 
-echo "Generating Demo Apk ..."
-version=$(cat manifest.gradle | grep "library_version" | tr "'" '\n' | head -n 2 | tail -n 1)
-./generate-debug-apk
+# Function to increment version
+increment_version() {
+    local version=$1
+    local parts=(${version//./ })
+    local last_part=${parts[${#parts[@]}-1]}
+    local new_last_part=$((last_part + 1))
+    parts[${#parts[@]}-1]=$new_last_part
+    echo "${parts[*]}" | tr ' ' '.'
+}
 
-echo "Creating GitHub Release ..."
-hub release create -a uploadservice-demo-debug.apk -m "$version" "$version"
+# Get current version
+current_version=$(cat manifest.gradle | grep "library_version" | tr "'" '\n' | head -n 2 | tail -n 1)
+current_version_code=$(cat manifest.gradle | grep "version_code" | tr "'" '\n' | head -n 2 | tail -n 1)
+
+# Increment versions
+new_version=$(increment_version "$current_version")
+new_version_code=$((current_version_code + 1))
+
+# Update manifest.gradle with new versions
+sed -i '' "s/library_version = '$current_version'/library_version = '$new_version'/" manifest.gradle
+sed -i '' "s/version_code = $current_version_code/version_code = $new_version_code/" manifest.gradle
+
+echo "Releasing version $new_version to GitHub Packages..."
+
+# Clean and build
+./gradlew clean build
+
+# Publish to GitHub Packages
+./gradlew :uploadservice:publish
 
 echo
-echo "Done!"
-echo "Visit https://oss.sonatype.org/#stagingRepositories and confirm the release"
+echo "Release complete!"
+echo "Visit https://github.com/tristanjakobi/android-upload-service-encrypted/packages to view your package"
+echo
+echo "To use this package in your project, add these to your build.gradle:"
+echo
+echo "repositories {"
+echo "    maven {"
+echo "        name = \"GitHubPackages\""
+echo "        url = uri(\"https://maven.pkg.github.com/tristanjakobi/android-upload-service-encrypted\")"
+echo "        credentials {"
+echo "            username = System.getenv(\"GITHUB_USERNAME\")"
+echo "            password = System.getenv(\"GITHUB_TOKEN\")"
+echo "        }"
+echo "    }"
+echo "}"
+echo
+echo "dependencies {"
+echo "    implementation \"com.github.tristanjakobi.android-upload-service-encrypted:uploadservice:$new_version\""
+echo "}"

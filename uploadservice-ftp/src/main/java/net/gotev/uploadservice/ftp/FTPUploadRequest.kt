@@ -1,11 +1,11 @@
-package net.gotev.uploadservice.ftp
+package com.levin.uploadservice.ftp
 
 import android.content.Context
 import java.io.File
 import java.io.FileNotFoundException
-import net.gotev.uploadservice.UploadRequest
-import net.gotev.uploadservice.UploadTask
-import net.gotev.uploadservice.data.UploadFile
+import com.levin.uploadservice.UploadRequest
+import com.levin.uploadservice.UploadTask
+import com.levin.uploadservice.data.UploadFile
 
 /**
  * Creates a new FTP Upload Request.

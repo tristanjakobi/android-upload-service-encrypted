@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.IgnoredOnParcel

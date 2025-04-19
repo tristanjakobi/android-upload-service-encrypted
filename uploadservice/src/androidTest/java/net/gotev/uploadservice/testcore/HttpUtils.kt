@@ -1,6 +1,6 @@
-package net.gotev.uploadservice.testcore
+package com.levin.uploadservice.testcore
 
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.network.ServerResponse
 import okhttp3.MultipartReader
 import okhttp3.OkHttpClient
 import okhttp3.mockwebserver.MockWebServer

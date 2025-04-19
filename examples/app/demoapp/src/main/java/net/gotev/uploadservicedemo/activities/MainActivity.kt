@@ -1,11 +1,11 @@
-package net.gotev.uploadservicedemo.activities
+package com.levin.uploadservicedemo.activities
 
 import android.os.Bundle
 import android.widget.Button
-import net.gotev.uploadservice.UploadService
-import net.gotev.uploadservicedemo.R
-import net.gotev.uploadservicedemo.extensions.openBrowser
-import net.gotev.uploadservicedemo.views.AddItem
+import com.levin.uploadservice.UploadService
+import com.levin.uploadservicedemo.R
+import com.levin.uploadservicedemo.extensions.openBrowser
+import com.levin.uploadservicedemo.views.AddItem
 
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

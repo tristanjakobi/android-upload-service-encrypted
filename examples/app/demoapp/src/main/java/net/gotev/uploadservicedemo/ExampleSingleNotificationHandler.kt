@@ -1,9 +1,9 @@
-package net.gotev.uploadservicedemo
+package com.levin.uploadservicedemo
 
 import android.app.NotificationManager
 import androidx.core.app.NotificationCompat
-import net.gotev.uploadservice.UploadService
-import net.gotev.uploadservice.observer.task.AbstractSingleNotificationHandler
+import com.levin.uploadservice.UploadService
+import com.levin.uploadservice.observer.task.AbstractSingleNotificationHandler
 
 class ExampleSingleNotificationHandler(service: UploadService) :
     AbstractSingleNotificationHandler(service) {

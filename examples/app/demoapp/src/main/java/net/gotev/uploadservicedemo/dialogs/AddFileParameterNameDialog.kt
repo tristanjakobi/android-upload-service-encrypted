@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.dialogs
+package com.levin.uploadservicedemo.dialogs
 
 import android.content.DialogInterface
 import android.view.View
@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import net.gotev.uploadservicedemo.R
-import net.gotev.uploadservicedemo.extensions.inputMethodManager
+import com.levin.uploadservicedemo.R
+import com.levin.uploadservicedemo.extensions.inputMethodManager
 
 class AddFileParameterNameDialog(
     context: AppCompatActivity,

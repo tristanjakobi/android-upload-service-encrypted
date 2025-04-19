@@ -10,7 +10,7 @@ import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import net.gotev.uploadservice.protocols.multipart.MultipartUploadRequest
+import com.levin.uploadservice.protocols.multipart.MultipartUploadRequest
 
 class MainActivity : AppCompatActivity() {
 

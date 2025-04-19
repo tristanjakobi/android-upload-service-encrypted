@@ -1,8 +1,8 @@
-package net.gotev.uploadservice.observer.request
+package com.levin.uploadservice.observer.request
 
 import android.content.Context
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.network.ServerResponse
 
 interface RequestObserverDelegate {
     /**

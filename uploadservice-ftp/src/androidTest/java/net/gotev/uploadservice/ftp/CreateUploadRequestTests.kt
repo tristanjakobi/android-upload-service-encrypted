@@ -1,10 +1,10 @@
-package net.gotev.uploadservice.ftp
+package com.levin.uploadservice.ftp
 
 import android.content.Context
 import android.os.Parcel
 import androidx.test.platform.app.InstrumentationRegistry
-import net.gotev.uploadservice.CreateUploadRequest
-import net.gotev.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.CreateUploadRequest
+import com.levin.uploadservice.persistence.PersistableData
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

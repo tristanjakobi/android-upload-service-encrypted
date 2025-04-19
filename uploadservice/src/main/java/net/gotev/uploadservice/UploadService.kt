@@ -1,4 +1,4 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.app.Notification
 import android.app.Service
@@ -8,15 +8,15 @@ import android.os.Build.VERSION.SDK_INT
 import android.os.IBinder
 import android.os.PowerManager
 import androidx.core.app.NotificationCompat
-import net.gotev.uploadservice.UploadServiceConfig.threadPool
-import net.gotev.uploadservice.extensions.acquirePartialWakeLock
-import net.gotev.uploadservice.extensions.getUploadTask
-import net.gotev.uploadservice.extensions.getUploadTaskCreationParameters
-import net.gotev.uploadservice.extensions.safeRelease
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.logger.UploadServiceLogger.NA
-import net.gotev.uploadservice.observer.task.BroadcastEmitter
-import net.gotev.uploadservice.observer.task.TaskCompletionNotifier
+import com.levin.uploadservice.UploadServiceConfig.threadPool
+import com.levin.uploadservice.extensions.acquirePartialWakeLock
+import com.levin.uploadservice.extensions.getUploadTask
+import com.levin.uploadservice.extensions.getUploadTaskCreationParameters
+import com.levin.uploadservice.extensions.safeRelease
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.logger.UploadServiceLogger.NA
+import com.levin.uploadservice.observer.task.BroadcastEmitter
+import com.levin.uploadservice.observer.task.TaskCompletionNotifier
 import java.util.Timer
 import java.util.TimerTask
 import java.util.concurrent.ConcurrentHashMap

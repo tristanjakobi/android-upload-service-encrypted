@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.extensions
+package com.levin.uploadservicedemo.extensions
 
 import java.util.regex.Pattern
 

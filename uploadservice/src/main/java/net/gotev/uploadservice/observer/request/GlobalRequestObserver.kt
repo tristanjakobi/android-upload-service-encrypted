@@ -1,7 +1,7 @@
-package net.gotev.uploadservice.observer.request
+package com.levin.uploadservice.observer.request
 
 import android.app.Application
-import net.gotev.uploadservice.data.UploadInfo
+import com.levin.uploadservice.data.UploadInfo
 
 class GlobalRequestObserver @JvmOverloads constructor(
     application: Application,

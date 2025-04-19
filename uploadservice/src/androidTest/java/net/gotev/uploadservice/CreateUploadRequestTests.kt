@@ -1,11 +1,11 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.content.Context
 import android.os.Parcel
 import androidx.test.platform.app.InstrumentationRegistry
-import net.gotev.uploadservice.persistence.PersistableData
-import net.gotev.uploadservice.protocols.binary.BinaryUploadRequest
-import net.gotev.uploadservice.protocols.multipart.MultipartUploadRequest
+import com.levin.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.protocols.binary.BinaryUploadRequest
+import com.levin.uploadservice.protocols.multipart.MultipartUploadRequest
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

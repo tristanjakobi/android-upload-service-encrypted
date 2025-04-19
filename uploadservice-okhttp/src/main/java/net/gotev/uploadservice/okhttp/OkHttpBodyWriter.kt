@@ -1,7 +1,7 @@
-package net.gotev.uploadservice.okhttp
+package com.levin.uploadservice.okhttp
 
 import java.io.IOException
-import net.gotev.uploadservice.network.BodyWriter
+import com.levin.uploadservice.network.BodyWriter
 import okio.BufferedSink
 
 /**

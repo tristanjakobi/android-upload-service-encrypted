@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.activities
+package com.levin.uploadservicedemo.activities
 
 import android.Manifest
 import android.app.PendingIntent
@@ -12,15 +12,15 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import net.gotev.uploadservice.data.UploadNotificationAction
-import net.gotev.uploadservice.data.UploadNotificationConfig
-import net.gotev.uploadservice.data.UploadNotificationStatusConfig
-import net.gotev.uploadservice.extensions.flagsCompat
-import net.gotev.uploadservice.extensions.getCancelUploadIntent
-import net.gotev.uploadservicedemo.App
-import net.gotev.uploadservicedemo.CustomPlaceholdersProcessor
-import net.gotev.uploadservicedemo.R
-import net.gotev.uploadservicedemo.extensions.inputMethodManager
+import com.levin.uploadservice.data.UploadNotificationAction
+import com.levin.uploadservice.data.UploadNotificationConfig
+import com.levin.uploadservice.data.UploadNotificationStatusConfig
+import com.levin.uploadservice.extensions.flagsCompat
+import com.levin.uploadservice.extensions.getCancelUploadIntent
+import com.levin.uploadservicedemo.App
+import com.levin.uploadservicedemo.CustomPlaceholdersProcessor
+import com.levin.uploadservicedemo.R
+import com.levin.uploadservicedemo.extensions.inputMethodManager
 import java.util.ArrayList
 
 open class BaseActivity : AppCompatActivity() {

@@ -1,8 +1,8 @@
-package net.gotev.uploadservice.network.hurl
+package com.levin.uploadservice.network.hurl
 
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.network.HttpRequest
-import net.gotev.uploadservice.network.HttpStack
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.network.HttpRequest
+import com.levin.uploadservice.network.HttpStack
 import java.io.IOException
 
 class HurlStack @JvmOverloads constructor(

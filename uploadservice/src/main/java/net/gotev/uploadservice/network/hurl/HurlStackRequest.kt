@@ -1,10 +1,10 @@
-package net.gotev.uploadservice.network.hurl
+package com.levin.uploadservice.network.hurl
 
-import net.gotev.uploadservice.data.NameValue
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.network.BodyWriter
-import net.gotev.uploadservice.network.HttpRequest
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.data.NameValue
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.network.BodyWriter
+import com.levin.uploadservice.network.HttpRequest
+import com.levin.uploadservice.network.ServerResponse
 import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL

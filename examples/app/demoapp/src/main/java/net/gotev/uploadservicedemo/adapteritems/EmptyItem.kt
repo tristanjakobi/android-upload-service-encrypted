@@ -1,10 +1,10 @@
-package net.gotev.uploadservicedemo.adapteritems
+package com.levin.uploadservicedemo.adapteritems
 
 import android.view.View
 import android.widget.TextView
-import net.gotev.recycleradapter.AdapterItem
-import net.gotev.recycleradapter.RecyclerAdapterViewHolder
-import net.gotev.uploadservicedemo.R
+import com.levin.recycleradapter.AdapterItem
+import com.levin.recycleradapter.RecyclerAdapterViewHolder
+import com.levin.uploadservicedemo.R
 
 class EmptyItem(private val text: String) : AdapterItem<EmptyItem.Holder>(text) {
     override fun getLayoutId() = R.layout.item_empty

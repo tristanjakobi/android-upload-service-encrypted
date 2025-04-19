@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace "net.gotev.uploadservicedemo"
+    namespace "com.levin.uploadservicedemo"
     compileSdkVersion target_sdk
 
     defaultConfig {
@@ -67,11 +67,11 @@ dependencies {
     // Debugging
     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
 
-    implementation 'net.gotev:recycleradapter:2.10.1'
+    implementation 'com.levin:recycleradapter:2.10.1'
 
-    /*implementation "net.gotev:uploadservice:${libraryVersion}"
-    implementation "net.gotev:uploadservice-okhttp:${libraryVersion}"
-    implementation "net.gotev:uploadservice-ftp:${libraryVersion}"*/
+    /*implementation "com.levin:uploadservice:${libraryVersion}"
+    implementation "com.levin:uploadservice-okhttp:${libraryVersion}"
+    implementation "com.levin:uploadservice-ftp:${libraryVersion}"*/
 
     //comment the previous lines and uncomment the next ones for development (it uses the local libs)
     implementation project(':uploadservice')

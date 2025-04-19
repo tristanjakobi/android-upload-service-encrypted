@@ -1,8 +1,8 @@
-package net.gotev.uploadservice.observer.task
+package com.levin.uploadservice.observer.task
 
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.data.UploadNotificationConfig
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.data.UploadNotificationConfig
+import com.levin.uploadservice.network.ServerResponse
 
 interface UploadTaskObserver {
     fun onStart(info: UploadInfo, notificationId: Int, notificationConfig: UploadNotificationConfig)

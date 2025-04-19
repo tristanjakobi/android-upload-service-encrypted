@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.observer.task
+package com.levin.uploadservice.observer.task
 
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -6,15 +6,15 @@ import android.content.Context
 import android.media.RingtoneManager
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import net.gotev.uploadservice.UploadService
-import net.gotev.uploadservice.UploadServiceConfig.namespace
-import net.gotev.uploadservice.UploadServiceConfig.placeholdersProcessor
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.data.UploadNotificationConfig
-import net.gotev.uploadservice.data.UploadNotificationStatusConfig
-import net.gotev.uploadservice.exceptions.UserCancelledUploadException
-import net.gotev.uploadservice.extensions.validateNotificationChannel
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.UploadService
+import com.levin.uploadservice.UploadServiceConfig.namespace
+import com.levin.uploadservice.UploadServiceConfig.placeholdersProcessor
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.data.UploadNotificationConfig
+import com.levin.uploadservice.data.UploadNotificationStatusConfig
+import com.levin.uploadservice.exceptions.UserCancelledUploadException
+import com.levin.uploadservice.extensions.validateNotificationChannel
+import com.levin.uploadservice.network.ServerResponse
 
 class NotificationHandler(private val service: UploadService) : UploadTaskObserver {
 

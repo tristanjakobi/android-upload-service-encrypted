@@ -1,9 +1,9 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
-import net.gotev.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.persistence.PersistableData
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals

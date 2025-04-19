@@ -1,10 +1,10 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
-import net.gotev.uploadservice.data.HttpUploadTaskParameters
-import net.gotev.uploadservice.data.NameValue
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.data.UploadTaskParameters
-import net.gotev.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.data.HttpUploadTaskParameters
+import com.levin.uploadservice.data.NameValue
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.data.UploadTaskParameters
+import com.levin.uploadservice.persistence.PersistableData
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -50,7 +50,7 @@ class DataTypesPersistableTests {
     @Test
     fun uploadTaskParameters() {
         val params = UploadTaskParameters(
-            taskClass = "net.gotev.someclass",
+            taskClass = "com.levin.someclass",
             id = "abcd",
             serverUrl = "https://server.url",
             maxRetries = 3,
@@ -76,7 +76,7 @@ class DataTypesPersistableTests {
     @Test
     fun uploadTaskParameters2() {
         val params = UploadTaskParameters(
-            taskClass = "net.gotev.someclass",
+            taskClass = "com.levin.someclass",
             id = "abcd",
             serverUrl = "https://server.url",
             maxRetries = 3,

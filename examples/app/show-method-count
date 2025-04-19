@@ -3,4 +3,4 @@
 echo
 echo
 echo
-cat demoapp/build/outputs/dexcount/debug.txt | grep "net.gotev.uploadservice" | grep -v "net.gotev.uploadservicedemo"
+cat demoapp/build/outputs/dexcount/debug.txt | grep "com.levin.uploadservice" | grep -v "com.levin.uploadservicedemo"

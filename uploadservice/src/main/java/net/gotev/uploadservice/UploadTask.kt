@@ -1,16 +1,16 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.content.Context
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.data.UploadNotificationConfig
-import net.gotev.uploadservice.data.UploadTaskParameters
-import net.gotev.uploadservice.exceptions.UploadError
-import net.gotev.uploadservice.exceptions.UserCancelledUploadException
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.network.HttpStack
-import net.gotev.uploadservice.network.ServerResponse
-import net.gotev.uploadservice.observer.task.UploadTaskObserver
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.data.UploadNotificationConfig
+import com.levin.uploadservice.data.UploadTaskParameters
+import com.levin.uploadservice.exceptions.UploadError
+import com.levin.uploadservice.exceptions.UserCancelledUploadException
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.network.HttpStack
+import com.levin.uploadservice.network.ServerResponse
+import com.levin.uploadservice.observer.task.UploadTaskObserver
 import java.io.IOException
 import java.util.ArrayList
 import java.util.Date

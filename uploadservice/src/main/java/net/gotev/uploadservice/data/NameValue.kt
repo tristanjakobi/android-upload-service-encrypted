@@ -1,10 +1,10 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import net.gotev.uploadservice.extensions.isASCII
-import net.gotev.uploadservice.persistence.Persistable
-import net.gotev.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.extensions.isASCII
+import com.levin.uploadservice.persistence.Persistable
+import com.levin.uploadservice.persistence.PersistableData
 
 @Parcelize
 data class NameValue(val name: String, val value: String) : Parcelable, Persistable {

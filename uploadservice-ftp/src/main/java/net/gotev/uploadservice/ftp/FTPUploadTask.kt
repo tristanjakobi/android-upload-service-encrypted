@@ -1,9 +1,9 @@
-package net.gotev.uploadservice.ftp
+package com.levin.uploadservice.ftp
 
-import net.gotev.uploadservice.UploadTask
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.network.HttpStack
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.UploadTask
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.network.HttpStack
+import com.levin.uploadservice.network.ServerResponse
 
 /**
  * Implements the FTP upload logic.

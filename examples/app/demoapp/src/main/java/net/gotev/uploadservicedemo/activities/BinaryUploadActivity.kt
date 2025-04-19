@@ -1,18 +1,18 @@
-package net.gotev.uploadservicedemo.activities
+package com.levin.uploadservicedemo.activities
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import net.gotev.recycleradapter.AdapterItem
-import net.gotev.uploadservice.protocols.binary.BinaryUploadRequest
-import net.gotev.uploadservicedemo.R
-import net.gotev.uploadservicedemo.adapteritems.EmptyItem
-import net.gotev.uploadservicedemo.adapteritems.UploadItem
-import net.gotev.uploadservicedemo.extensions.openBrowser
-import net.gotev.uploadservicedemo.utils.UploadItemUtils
-import net.gotev.uploadservicedemo.utils.UploadItemUtils.ForEachDelegate
+import com.levin.recycleradapter.AdapterItem
+import com.levin.uploadservice.protocols.binary.BinaryUploadRequest
+import com.levin.uploadservicedemo.R
+import com.levin.uploadservicedemo.adapteritems.EmptyItem
+import com.levin.uploadservicedemo.adapteritems.UploadItem
+import com.levin.uploadservicedemo.extensions.openBrowser
+import com.levin.uploadservicedemo.utils.UploadItemUtils
+import com.levin.uploadservicedemo.utils.UploadItemUtils.ForEachDelegate
 import java.io.IOException
 
 class BinaryUploadActivity : HttpUploadActivity() {

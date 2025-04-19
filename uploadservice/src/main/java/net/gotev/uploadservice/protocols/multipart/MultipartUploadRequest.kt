@@ -1,10 +1,10 @@
-package net.gotev.uploadservice.protocols.multipart
+package com.levin.uploadservice.protocols.multipart
 
 import android.content.Context
 import java.io.FileNotFoundException
-import net.gotev.uploadservice.HttpUploadRequest
-import net.gotev.uploadservice.UploadTask
-import net.gotev.uploadservice.data.UploadFile
+import com.levin.uploadservice.HttpUploadRequest
+import com.levin.uploadservice.UploadTask
+import com.levin.uploadservice.data.UploadFile
 
 /**
  * HTTP/Multipart upload request. This is the most common way to upload files on a server.

@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 enum class UploadStatus {
     InProgress,

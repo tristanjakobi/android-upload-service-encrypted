@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.testcore
+package com.levin.uploadservice.testcore
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

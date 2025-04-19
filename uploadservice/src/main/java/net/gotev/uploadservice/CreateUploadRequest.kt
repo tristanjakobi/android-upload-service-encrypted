@@ -1,10 +1,10 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.content.Context
 import android.os.Parcel
-import net.gotev.uploadservice.data.UploadNotificationConfig
-import net.gotev.uploadservice.data.UploadTaskParameters
-import net.gotev.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.data.UploadNotificationConfig
+import com.levin.uploadservice.data.UploadTaskParameters
+import com.levin.uploadservice.persistence.PersistableData
 
 class CreateUploadRequest private constructor(
     context: Context,

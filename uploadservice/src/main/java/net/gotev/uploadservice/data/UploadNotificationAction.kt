@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 import android.app.PendingIntent
 import android.os.Parcelable

@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo
+package com.levin.uploadservicedemo
 
 import android.app.Application
 import android.app.NotificationChannel
@@ -7,10 +7,10 @@ import android.os.Build
 import android.os.StrictMode
 import android.os.StrictMode.VmPolicy
 import android.util.Log
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.data.RetryPolicyConfig
-import net.gotev.uploadservice.observer.request.GlobalRequestObserver
-import net.gotev.uploadservice.okhttp.OkHttpStack
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.data.RetryPolicyConfig
+import com.levin.uploadservice.observer.request.GlobalRequestObserver
+import com.levin.uploadservice.okhttp.OkHttpStack
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

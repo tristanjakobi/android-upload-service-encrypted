@@ -1,8 +1,8 @@
-package net.gotev.uploadservice.network.hurl
+package com.levin.uploadservice.network.hurl
 
 import java.io.IOException
 import java.io.OutputStream
-import net.gotev.uploadservice.network.BodyWriter
+import com.levin.uploadservice.network.BodyWriter
 
 class HurlBodyWriter(private val stream: OutputStream, listener: OnStreamWriteListener) :
     BodyWriter(listener) {

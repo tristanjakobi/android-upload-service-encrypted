@@ -1,7 +1,7 @@
-package net.gotev.uploadservicedemo.utils
+package com.levin.uploadservicedemo.utils
 
-import net.gotev.recycleradapter.RecyclerAdapter
-import net.gotev.uploadservicedemo.adapteritems.UploadItem
+import com.levin.recycleradapter.RecyclerAdapter
+import com.levin.uploadservicedemo.adapteritems.UploadItem
 
 /**
  * @author Aleksandar Gotev

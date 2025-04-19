@@ -1,13 +1,13 @@
-package net.gotev.uploadservice.observer.request
+package com.levin.uploadservice.observer.request
 
 import android.content.Context
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
-import net.gotev.uploadservice.UploadRequest
-import net.gotev.uploadservice.UploadService
-import net.gotev.uploadservice.data.UploadInfo
+import com.levin.uploadservice.UploadRequest
+import com.levin.uploadservice.UploadService
+import com.levin.uploadservice.data.UploadInfo
 
 class RequestObserver @JvmOverloads constructor(
     context: Context,

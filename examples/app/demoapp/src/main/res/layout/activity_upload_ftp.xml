@@ -58,7 +58,7 @@
         android:id="@+id/ftp_password"
         android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
-    <net.gotev.uploadservicedemo.views.AddItem
+    <com.levin.uploadservicedemo.views.AddItem
         android:id="@+id/add_file"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

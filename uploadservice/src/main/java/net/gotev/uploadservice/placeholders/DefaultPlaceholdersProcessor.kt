@@ -1,8 +1,8 @@
-package net.gotev.uploadservice.placeholders
+package com.levin.uploadservice.placeholders
 
-import net.gotev.uploadservice.data.UploadElapsedTime
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.data.UploadRate
+import com.levin.uploadservice.data.UploadElapsedTime
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.data.UploadRate
 
 open class DefaultPlaceholdersProcessor : PlaceholdersProcessor {
     open fun uploadElapsedTime(uploadElapsedTime: UploadElapsedTime) = when {

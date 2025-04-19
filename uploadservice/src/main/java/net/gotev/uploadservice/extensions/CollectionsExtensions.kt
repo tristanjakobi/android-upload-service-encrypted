@@ -1,6 +1,6 @@
-package net.gotev.uploadservice.extensions
+package com.levin.uploadservice.extensions
 
-import net.gotev.uploadservice.data.NameValue
+import com.levin.uploadservice.data.NameValue
 
 fun ArrayList<NameValue>.addHeader(name: String, value: String) {
     add(NameValue(name, value).validateAsHeader())

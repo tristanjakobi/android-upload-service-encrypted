@@ -1,13 +1,13 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 import android.os.Parcelable
 import java.util.LinkedHashMap
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.persistence.Persistable
-import net.gotev.uploadservice.persistence.PersistableData
-import net.gotev.uploadservice.schemehandlers.SchemeHandler
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.persistence.Persistable
+import com.levin.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.schemehandlers.SchemeHandler
 
 @Parcelize
 data class UploadFile @JvmOverloads constructor(

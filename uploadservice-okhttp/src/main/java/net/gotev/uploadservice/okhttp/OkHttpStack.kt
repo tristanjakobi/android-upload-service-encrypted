@@ -1,8 +1,8 @@
-package net.gotev.uploadservice.okhttp
+package com.levin.uploadservice.okhttp
 
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.network.HttpRequest
-import net.gotev.uploadservice.network.HttpStack
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.network.HttpRequest
+import com.levin.uploadservice.network.HttpStack
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response

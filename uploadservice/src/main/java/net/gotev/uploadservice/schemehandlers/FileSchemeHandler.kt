@@ -1,9 +1,9 @@
-package net.gotev.uploadservice.schemehandlers
+package com.levin.uploadservice.schemehandlers
 
 import android.content.Context
-import net.gotev.uploadservice.extensions.autoDetectMimeType
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.logger.UploadServiceLogger.NA
+import com.levin.uploadservice.extensions.autoDetectMimeType
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.logger.UploadServiceLogger.NA
 import java.io.File
 import java.io.FileInputStream
 import java.io.IOException

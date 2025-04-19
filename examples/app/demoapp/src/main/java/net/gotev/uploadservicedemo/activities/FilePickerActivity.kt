@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.activities
+package com.levin.uploadservicedemo.activities
 
 import android.content.Intent
 import java.util.ArrayList

@@ -1,6 +1,6 @@
-package net.gotev.uploadservice.okhttp
+package com.levin.uploadservice.okhttp
 
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.network.ServerResponse
 import okhttp3.Response
 
 /**

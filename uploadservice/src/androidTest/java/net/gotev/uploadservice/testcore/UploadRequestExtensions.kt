@@ -1,14 +1,14 @@
-package net.gotev.uploadservice.testcore
+package com.levin.uploadservice.testcore
 
 import android.app.Application
 import android.content.Context
-import net.gotev.uploadservice.UploadRequest
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.exceptions.UploadError
-import net.gotev.uploadservice.exceptions.UserCancelledUploadException
-import net.gotev.uploadservice.network.ServerResponse
-import net.gotev.uploadservice.observer.request.GlobalRequestObserver
-import net.gotev.uploadservice.observer.request.RequestObserverDelegate
+import com.levin.uploadservice.UploadRequest
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.exceptions.UploadError
+import com.levin.uploadservice.exceptions.UserCancelledUploadException
+import com.levin.uploadservice.network.ServerResponse
+import com.levin.uploadservice.observer.request.GlobalRequestObserver
+import com.levin.uploadservice.observer.request.RequestObserverDelegate
 import java.util.UUID
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit

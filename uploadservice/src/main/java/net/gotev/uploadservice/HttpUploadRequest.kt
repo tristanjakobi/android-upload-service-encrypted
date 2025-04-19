@@ -1,11 +1,11 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.content.Context
 import android.util.Base64
-import net.gotev.uploadservice.data.HttpUploadTaskParameters
-import net.gotev.uploadservice.data.NameValue
-import net.gotev.uploadservice.extensions.addHeader
-import net.gotev.uploadservice.extensions.isValidHttpUrl
+import com.levin.uploadservice.data.HttpUploadTaskParameters
+import com.levin.uploadservice.data.NameValue
+import com.levin.uploadservice.extensions.addHeader
+import com.levin.uploadservice.extensions.isValidHttpUrl
 
 /**
  * Represents a generic HTTP upload request.<br></br>

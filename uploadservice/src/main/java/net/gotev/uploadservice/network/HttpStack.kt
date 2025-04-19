@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.network
+package com.levin.uploadservice.network
 
 import java.io.IOException
 

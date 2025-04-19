@@ -1,12 +1,12 @@
-package net.gotev.uploadservicedemo
+package com.levin.uploadservicedemo
 
 import android.content.Context
 import android.util.Log
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.exceptions.UploadError
-import net.gotev.uploadservice.exceptions.UserCancelledUploadException
-import net.gotev.uploadservice.network.ServerResponse
-import net.gotev.uploadservice.observer.request.RequestObserverDelegate
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.exceptions.UploadError
+import com.levin.uploadservice.exceptions.UserCancelledUploadException
+import com.levin.uploadservice.network.ServerResponse
+import com.levin.uploadservice.observer.request.RequestObserverDelegate
 
 /**
  * @author Aleksandar Gotev

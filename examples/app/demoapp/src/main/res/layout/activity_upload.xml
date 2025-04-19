@@ -26,7 +26,7 @@
         android:id="@+id/server_url"
         android:layout_marginBottom="@dimen/activity_vertical_margin" />
 
-    <net.gotev.uploadservicedemo.views.AddItem
+    <com.levin.uploadservicedemo.views.AddItem
         android:id="@+id/add_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         app:titleText="@string/add_header"
         app:colorFilter="@color/colorAccent"/>
 
-    <net.gotev.uploadservicedemo.views.AddItem
+    <com.levin.uploadservicedemo.views.AddItem
         android:id="@+id/add_parameter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         app:titleText="@string/add_parameter"
         app:colorFilter="@color/colorPrimary"/>
 
-    <net.gotev.uploadservicedemo.views.AddItem
+    <com.levin.uploadservicedemo.views.AddItem
         android:id="@+id/add_file"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

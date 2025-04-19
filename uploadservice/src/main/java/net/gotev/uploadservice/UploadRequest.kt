@@ -1,15 +1,15 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.content.Context
 import androidx.lifecycle.LifecycleOwner
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.data.UploadNotificationConfig
-import net.gotev.uploadservice.data.UploadTaskParameters
-import net.gotev.uploadservice.extensions.startNewUpload
-import net.gotev.uploadservice.observer.request.RequestObserver
-import net.gotev.uploadservice.observer.request.RequestObserverDelegate
-import net.gotev.uploadservice.persistence.Persistable
-import net.gotev.uploadservice.persistence.PersistableData
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.data.UploadNotificationConfig
+import com.levin.uploadservice.data.UploadTaskParameters
+import com.levin.uploadservice.extensions.startNewUpload
+import com.levin.uploadservice.observer.request.RequestObserver
+import com.levin.uploadservice.observer.request.RequestObserverDelegate
+import com.levin.uploadservice.persistence.Persistable
+import com.levin.uploadservice.persistence.PersistableData
 import java.util.ArrayList
 import java.util.UUID
 

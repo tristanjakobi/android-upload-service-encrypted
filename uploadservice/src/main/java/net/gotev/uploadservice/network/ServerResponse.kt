@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.network
+package com.levin.uploadservice.network
 
 import android.os.Parcelable
 import java.io.Serializable

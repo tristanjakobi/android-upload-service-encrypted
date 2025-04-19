@@ -1,7 +1,7 @@
-package net.gotev.uploadservicedemo
+package com.levin.uploadservicedemo
 
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.placeholders.DefaultPlaceholdersProcessor
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.placeholders.DefaultPlaceholdersProcessor
 
 class CustomPlaceholdersProcessor : DefaultPlaceholdersProcessor() {
     companion object {

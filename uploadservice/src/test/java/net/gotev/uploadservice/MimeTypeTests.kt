@@ -1,8 +1,8 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
-import net.gotev.uploadservice.extensions.APPLICATION_OCTET_STREAM
-import net.gotev.uploadservice.extensions.VIDEO_MP4
-import net.gotev.uploadservice.extensions.autoDetectMimeType
+import com.levin.uploadservice.extensions.APPLICATION_OCTET_STREAM
+import com.levin.uploadservice.extensions.VIDEO_MP4
+import com.levin.uploadservice.extensions.autoDetectMimeType
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Assert.fail

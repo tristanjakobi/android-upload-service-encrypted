@@ -1,8 +1,9 @@
-package net.gotev.uploadservice.protocols.binary
+package com.levin.uploadservice.protocols.binary
 
-import net.gotev.uploadservice.HttpUploadTask
-import net.gotev.uploadservice.extensions.addHeader
-import net.gotev.uploadservice.network.BodyWriter
+import com.levin.uploadservice.HttpUploadTask
+import com.levin.uploadservice.extensions.addHeader
+import com.levin.uploadservice.network.BodyWriter
+import android.util.Base64
 
 /**
  * Implements a binary file upload task.
@@ -22,12 +23,12 @@ class BinaryUploadTask : HttpUploadTask() {
     }
 
     override fun onWriteRequestBody(bodyWriter: BodyWriter) {
-        val keyBase64 = params.taskParameters["encryptionKey"]
-        val nonceBase64 = params.taskParameters["encryptionNonce"]
+        val keyBase64 = params.additionalParameters.getString("encryptionKey")
+        val nonceBase64 = params.additionalParameters.getString("encryptionNonce")
 
         if (keyBase64 != null && nonceBase64 != null) {
-            val keyBytes = android.util.Base64.decode(keyBase64, android.util.Base64.DEFAULT)
-            val nonceBytes = android.util.Base64.decode(nonceBase64, android.util.Base64.DEFAULT)
+            val keyBytes = Base64.decode(keyBase64.toByteArray(), Base64.DEFAULT)
+            val nonceBytes = Base64.decode(nonceBase64.toByteArray(), Base64.DEFAULT)
 
             val secretKey = javax.crypto.spec.SecretKeySpec(keyBytes, "AES")
             val cipher = javax.crypto.Cipher.getInstance("AES/CTR/NoPadding")

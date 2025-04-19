@@ -1,13 +1,13 @@
-package net.gotev.uploadservice.protocols.multipart
+package com.levin.uploadservice.protocols.multipart
 
-import net.gotev.uploadservice.BuildConfig
-import net.gotev.uploadservice.HttpUploadTask
-import net.gotev.uploadservice.data.NameValue
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.extensions.addHeader
-import net.gotev.uploadservice.extensions.asciiBytes
-import net.gotev.uploadservice.extensions.utf8Bytes
-import net.gotev.uploadservice.network.BodyWriter
+import com.levin.uploadservice.BuildConfig
+import com.levin.uploadservice.HttpUploadTask
+import com.levin.uploadservice.data.NameValue
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.extensions.addHeader
+import com.levin.uploadservice.extensions.asciiBytes
+import com.levin.uploadservice.extensions.utf8Bytes
+import com.levin.uploadservice.network.BodyWriter
 
 /**
  * Implements an HTTP Multipart upload task.

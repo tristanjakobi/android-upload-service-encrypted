@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.views
+package com.levin.uploadservicedemo.views
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -10,7 +10,7 @@ import android.view.MotionEvent
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import net.gotev.uploadservicedemo.R
+import com.levin.uploadservicedemo.R
 
 class AddItem : LinearLayout {
     protected lateinit var image: ImageView

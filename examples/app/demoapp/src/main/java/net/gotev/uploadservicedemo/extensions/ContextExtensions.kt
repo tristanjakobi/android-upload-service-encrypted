@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.extensions
+package com.levin.uploadservicedemo.extensions
 
 import android.content.Context
 import android.content.Intent

@@ -1,6 +1,6 @@
-package net.gotev.uploadservice.placeholders
+package com.levin.uploadservice.placeholders
 
-import net.gotev.uploadservice.data.UploadInfo
+import com.levin.uploadservice.data.UploadInfo
 
 interface PlaceholdersProcessor {
     /**

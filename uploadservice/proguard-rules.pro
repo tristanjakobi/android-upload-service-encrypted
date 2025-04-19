@@ -1,1 +1,1 @@
--keep class net.gotev.uploadservice.** { *; }
+-keep class com.levin.uploadservice.** { *; }

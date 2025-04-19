@@ -1,11 +1,11 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 import android.content.Intent
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.extensions.parcelableCompat
-import net.gotev.uploadservice.network.ServerResponse
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.extensions.parcelableCompat
+import com.levin.uploadservice.network.ServerResponse
 
 @Parcelize
 internal data class BroadcastData @JvmOverloads constructor(

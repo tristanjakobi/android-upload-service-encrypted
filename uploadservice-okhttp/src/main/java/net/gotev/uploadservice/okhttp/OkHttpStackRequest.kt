@@ -1,9 +1,9 @@
-package net.gotev.uploadservice.okhttp
+package com.levin.uploadservice.okhttp
 
-import net.gotev.uploadservice.data.NameValue
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.network.BodyWriter
-import net.gotev.uploadservice.network.HttpRequest
+import com.levin.uploadservice.data.NameValue
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.network.BodyWriter
+import com.levin.uploadservice.network.HttpRequest
 import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient

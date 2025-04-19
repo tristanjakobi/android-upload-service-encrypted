@@ -39,5 +39,5 @@ dependencies {
 
     def uploadServiceVersion = "4.7.0"
 
-    implementation "net.gotev:uploadservice:$uploadServiceVersion"
+    implementation "com.levin:uploadservice:$uploadServiceVersion"
 }

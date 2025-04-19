@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 data class UploadRate(val value: Int = 0, val unit: UploadRateUnit = UploadRateUnit.BitPerSecond) {
     enum class UploadRateUnit {

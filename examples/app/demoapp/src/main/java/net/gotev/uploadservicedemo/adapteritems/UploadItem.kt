@@ -1,11 +1,11 @@
-package net.gotev.uploadservicedemo.adapteritems
+package com.levin.uploadservicedemo.adapteritems
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import net.gotev.recycleradapter.AdapterItem
-import net.gotev.recycleradapter.RecyclerAdapterViewHolder
-import net.gotev.uploadservicedemo.R
+import com.levin.recycleradapter.AdapterItem
+import com.levin.recycleradapter.RecyclerAdapterViewHolder
+import com.levin.uploadservicedemo.R
 
 class UploadItem(
     val type: Type,

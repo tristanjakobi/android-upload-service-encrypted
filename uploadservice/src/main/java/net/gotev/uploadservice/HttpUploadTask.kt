@@ -1,11 +1,11 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
 import android.annotation.SuppressLint
-import net.gotev.uploadservice.data.HttpUploadTaskParameters
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.network.BodyWriter
-import net.gotev.uploadservice.network.HttpRequest
-import net.gotev.uploadservice.network.HttpStack
+import com.levin.uploadservice.data.HttpUploadTaskParameters
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.network.BodyWriter
+import com.levin.uploadservice.network.HttpRequest
+import com.levin.uploadservice.network.HttpStack
 import java.io.UnsupportedEncodingException
 
 /**

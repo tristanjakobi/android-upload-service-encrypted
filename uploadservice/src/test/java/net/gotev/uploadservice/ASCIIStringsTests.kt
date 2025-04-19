@@ -1,6 +1,6 @@
-package net.gotev.uploadservice
+package com.levin.uploadservice
 
-import net.gotev.uploadservice.extensions.isASCII
+import com.levin.uploadservice.extensions.isASCII
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

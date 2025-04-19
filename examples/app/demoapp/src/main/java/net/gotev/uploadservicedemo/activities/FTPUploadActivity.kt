@@ -1,4 +1,4 @@
-package net.gotev.uploadservicedemo.activities
+package com.levin.uploadservicedemo.activities
 
 import android.content.Context
 import android.content.Intent
@@ -10,17 +10,17 @@ import android.widget.Toast
 import androidx.core.app.NavUtils
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import net.gotev.recycleradapter.RecyclerAdapter
-import net.gotev.uploadservice.ftp.FTPUploadRequest
-import net.gotev.uploadservicedemo.R
-import net.gotev.uploadservicedemo.adapteritems.EmptyItem
-import net.gotev.uploadservicedemo.adapteritems.UploadItem
-import net.gotev.uploadservicedemo.dialogs.AddFileParameterNameDialog
-import net.gotev.uploadservicedemo.extensions.isValidIPorHostname
-import net.gotev.uploadservicedemo.extensions.openBrowser
-import net.gotev.uploadservicedemo.utils.UploadItemUtils
-import net.gotev.uploadservicedemo.utils.UploadItemUtils.ForEachDelegate
-import net.gotev.uploadservicedemo.views.AddItem
+import com.levin.recycleradapter.RecyclerAdapter
+import com.levin.uploadservice.ftp.FTPUploadRequest
+import com.levin.uploadservicedemo.R
+import com.levin.uploadservicedemo.adapteritems.EmptyItem
+import com.levin.uploadservicedemo.adapteritems.UploadItem
+import com.levin.uploadservicedemo.dialogs.AddFileParameterNameDialog
+import com.levin.uploadservicedemo.extensions.isValidIPorHostname
+import com.levin.uploadservicedemo.extensions.openBrowser
+import com.levin.uploadservicedemo.utils.UploadItemUtils
+import com.levin.uploadservicedemo.utils.UploadItemUtils.ForEachDelegate
+import com.levin.uploadservicedemo.views.AddItem
 import java.io.IOException
 
 class FTPUploadActivity : FilePickerActivity() {

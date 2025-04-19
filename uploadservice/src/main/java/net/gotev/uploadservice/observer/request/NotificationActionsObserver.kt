@@ -1,15 +1,15 @@
-package net.gotev.uploadservice.observer.request
+package com.levin.uploadservice.observer.request
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import net.gotev.uploadservice.UploadService
-import net.gotev.uploadservice.UploadServiceConfig.broadcastNotificationAction
-import net.gotev.uploadservice.UploadServiceConfig.broadcastNotificationActionIntentFilter
-import net.gotev.uploadservice.extensions.registerReceiverCompat
-import net.gotev.uploadservice.extensions.uploadIdToCancel
-import net.gotev.uploadservice.logger.UploadServiceLogger
-import net.gotev.uploadservice.logger.UploadServiceLogger.NA
+import com.levin.uploadservice.UploadService
+import com.levin.uploadservice.UploadServiceConfig.broadcastNotificationAction
+import com.levin.uploadservice.UploadServiceConfig.broadcastNotificationActionIntentFilter
+import com.levin.uploadservice.extensions.registerReceiverCompat
+import com.levin.uploadservice.extensions.uploadIdToCancel
+import com.levin.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.logger.UploadServiceLogger.NA
 
 open class NotificationActionsObserver(
     private val context: Context

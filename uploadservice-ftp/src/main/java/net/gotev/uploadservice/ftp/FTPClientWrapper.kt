@@ -1,9 +1,9 @@
-package net.gotev.uploadservice.ftp
+package com.levin.uploadservice.ftp
 
 import android.content.Context
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.data.UploadFile
-import net.gotev.uploadservice.logger.UploadServiceLogger
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.data.UploadFile
+import com.levin.uploadservice.logger.UploadServiceLogger
 import org.apache.commons.net.ftp.FTP
 import org.apache.commons.net.ftp.FTPClient
 import org.apache.commons.net.ftp.FTPReply

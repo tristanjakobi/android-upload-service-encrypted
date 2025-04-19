@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.ftp
+package com.levin.uploadservice.ftp
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

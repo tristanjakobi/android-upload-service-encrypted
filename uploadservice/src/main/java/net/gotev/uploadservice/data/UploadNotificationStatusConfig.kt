@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.data
+package com.levin.uploadservice.data
 
 import android.app.PendingIntent
 import android.content.Context
@@ -9,7 +9,7 @@ import androidx.annotation.ColorInt
 import androidx.annotation.DrawableRes
 import androidx.core.app.NotificationCompat
 import kotlinx.parcelize.Parcelize
-import net.gotev.uploadservice.extensions.flagsCompat
+import com.levin.uploadservice.extensions.flagsCompat
 import java.util.ArrayList
 
 @Parcelize

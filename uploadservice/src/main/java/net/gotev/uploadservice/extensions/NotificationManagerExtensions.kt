@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.extensions
+package com.levin.uploadservice.extensions
 
 import android.app.NotificationManager
 import android.os.Build

@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.persistence
+package com.levin.uploadservice.persistence
 
 interface Persistable {
     fun toPersistableData(): PersistableData

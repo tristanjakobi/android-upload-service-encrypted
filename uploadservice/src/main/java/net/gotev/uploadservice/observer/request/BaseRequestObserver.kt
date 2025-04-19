@@ -1,13 +1,13 @@
-package net.gotev.uploadservice.observer.request
+package com.levin.uploadservice.observer.request
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import net.gotev.uploadservice.UploadServiceConfig
-import net.gotev.uploadservice.data.BroadcastData
-import net.gotev.uploadservice.data.UploadInfo
-import net.gotev.uploadservice.data.UploadStatus
-import net.gotev.uploadservice.extensions.registerReceiverCompat
+import com.levin.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.data.BroadcastData
+import com.levin.uploadservice.data.UploadInfo
+import com.levin.uploadservice.data.UploadStatus
+import com.levin.uploadservice.extensions.registerReceiverCompat
 
 open class BaseRequestObserver(
     private val context: Context,

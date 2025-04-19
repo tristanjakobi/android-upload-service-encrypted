@@ -1,9 +1,9 @@
-package net.gotev.uploadservice.testcore
+package com.levin.uploadservice.testcore
 
 import android.app.Application
 import androidx.test.platform.app.InstrumentationRegistry
-import net.gotev.uploadservice.UploadService
-import net.gotev.uploadservice.UploadServiceConfig
+import com.levin.uploadservice.UploadService
+import com.levin.uploadservice.UploadServiceConfig
 import org.junit.After
 import org.junit.Before
 

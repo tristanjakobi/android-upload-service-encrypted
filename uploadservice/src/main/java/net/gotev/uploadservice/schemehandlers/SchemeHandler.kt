@@ -1,4 +1,4 @@
-package net.gotev.uploadservice.schemehandlers
+package com.levin.uploadservice.schemehandlers
 
 import android.content.Context
 import java.io.InputStream
