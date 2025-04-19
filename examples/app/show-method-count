@@ -1,6 +1,0 @@
-#!/bin/bash
-./gradlew clean assembleDebug
-echo
-echo
-echo
-cat demoapp/build/outputs/dexcount/debug.txt | grep "com.levin.uploadservice" | grep -v "com.levin.uploadservicedemo"
