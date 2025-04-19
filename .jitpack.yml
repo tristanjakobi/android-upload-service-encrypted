@@ -1,0 +1,17 @@
+jdk:
+  - openjdk17
+
+before_install:
+  - chmod +x gradlew
+
+install:
+  - ./gradlew :uploadservice:assembleRelease
+  - ./gradlew :uploadservice:generatePomFileForReleasePublication
+
+build:
+  - ./gradlew :uploadservice:publishReleasePublicationToMavenLocal
+
+env:
+  ANDROID_HOME: /usr/local/android-sdk
+  ANDROID_SDK_ROOT: /usr/local/android-sdk
+  ANDROID_NDK_HOME: /usr/local/android-ndk
