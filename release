@@ -1,28 +1,12 @@
 #!/bin/bash -e
 
-# Function to increment version
-increment_version() {
-    local version=$1
-    local parts=(${version//./ })
-    local last_part=${parts[${#parts[@]}-1]}
-    local new_last_part=$((last_part + 1))
-    parts[${#parts[@]}-1]=$new_last_part
-    echo "${parts[*]}" | tr ' ' '.'
-}
+
 
 # Get current version
 current_version=$(cat manifest.gradle | grep "library_version" | tr "'" '\n' | head -n 2 | tail -n 1)
 current_version_code=$(cat manifest.gradle | grep "version_code" | tr "'" '\n' | head -n 2 | tail -n 1)
-
-# Increment versions
-new_version=$(increment_version "$current_version")
-new_version_code=$((current_version_code + 1))
-
-# Update manifest.gradle with new versions
-sed -i '' "s/library_version = '$current_version'/library_version = '$new_version'/" manifest.gradle
-sed -i '' "s/version_code = $current_version_code/version_code = $new_version_code/" manifest.gradle
-
-echo "Releasing version $new_version to GitHub Packages..."
+    
+echo "Releasing version $current_version to GitHub Packages..."
 
 # Clean and build
 ./gradlew clean build
@@ -48,5 +32,5 @@ echo "    }"
 echo "}"
 echo
 echo "dependencies {"
-echo "    implementation \"com.github.tristanjakobi.android-upload-service-encrypted:uploadservice:$new_version\""
+echo "    implementation \"com.github.tristanjakobi.android-upload-service-encrypted:uploadservice:$current_version\""
 echo "}"
