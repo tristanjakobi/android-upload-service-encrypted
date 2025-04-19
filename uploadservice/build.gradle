@@ -107,22 +107,20 @@ afterEvaluate {
                 // Sources JAR
                 artifact releaseSourcesJar
 
-                // Configure POM
                 pom {
                     name = 'Android Upload Service'
                     description = 'Easily upload files in the background with automatic Android Notification Center progress indication.'
                     url = 'https://github.com/tristanjakobi/android-upload-service-encrypted'
                     licenses {
                         license {
-                            name = 'The Apache Software License, Version 2.0'
-                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
                         }
                     }
                     developers {
                         developer {
-                            id = 'tristanjakobi'
-                            name = 'Tristan Jakobi'
-                            email = 'tristan@jakobi.dev'
+                            id = github_username
+                            name = maintainer
                         }
                     }
                     scm {
@@ -130,6 +128,16 @@ afterEvaluate {
                         developerConnection = 'scm:git:ssh://github.com/tristanjakobi/android-upload-service-encrypted.git'
                         url = 'https://github.com/tristanjakobi/android-upload-service-encrypted/tree/master'
                     }
+                }
+            }
+        }
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/tristanjakobi/android-upload-service-encrypted")
+                credentials {
+                    username = System.getenv("GITHUB_USERNAME")
+                    password = System.getenv("GITHUB_TOKEN")
                 }
             }
         }
