@@ -10,9 +10,6 @@ install:
   - ./gradlew :uploadservice:releaseSourcesJar
   - ./gradlew :uploadservice:generatePomFileForReleasePublication
 
-build:
-  - ./gradlew :uploadservice:publishToMavenLocal
-
 env:
   ANDROID_HOME: /usr/local/android-sdk
   ANDROID_SDK_ROOT: /usr/local/android-sdk
