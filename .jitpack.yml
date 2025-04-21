@@ -1,19 +1,11 @@
 jdk:
   - openjdk17
 
-before_install:
-  - chmod +x gradlew
-  - echo "sdk.dir=/usr/local/android-sdk" > local.properties
-
 install:
-  - ./gradlew :uploadservice:clean
-  - ./gradlew :uploadservice:assembleRelease
-  - ./gradlew :uploadservice:releaseSourcesJar
-  - ./gradlew :uploadservice:generatePomFileForReleasePublication
-
-# Skip other modules to avoid Javadoc generation issues
-env:
-  SKIP_JAVADOC: 1
-  ANDROID_SDK_ROOT: /usr/local/android-sdk
-  ANDROID_HOME: /usr/local/android-sdk
-  GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=false"
+  - echo "sdk.dir=/usr/local/android-sdk" > uploadservice-ftp/local.properties
+  - echo "sdk.dir=/usr/local/android-sdk" > uploadservice-okhttp/local.properties
+  - echo "sdk.dir=/usr/local/android-sdk" > uploadservice/local.properties
+  - ./gradlew clean
+  - ./gradlew assembleRelease
+  - ./gradlew releaseSourcesJar
+  - ./gradlew generatePomFileForReleasePublication
