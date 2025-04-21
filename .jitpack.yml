@@ -12,7 +12,7 @@ install:
   - ./gradlew :uploadservice:generatePomFileForReleasePublication --stacktrace
 
 build:
-  - ./gradlew :uploadservice:publishReleasePublicationToMavenLocal --stacktrace
+  - ./gradlew :uploadservice:publishToMavenLocal --stacktrace
   - ls -la uploadservice/build/outputs/aar/
 
 env:
