@@ -5,7 +5,10 @@ before_install:
   - chmod +x gradlew
 
 install:
+  - ./gradlew :uploadservice:clean
   - ./gradlew :uploadservice:assembleRelease
+  - ./gradlew :uploadservice:releaseSourcesJar
+  - ./gradlew :uploadservice:generatePomFileForReleasePublication
 
 build:
   - ./gradlew :uploadservice:publishToMavenLocal
