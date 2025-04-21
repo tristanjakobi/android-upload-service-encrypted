@@ -18,7 +18,7 @@ project.ext {
 }
 // end - do not modify this if your project is on github
 
-group = 'com.github.tristanjakobi.android-upload-service-encrypted'
+group = 'com.github.tristanjakobi'
 version = library_version
 
 android {
