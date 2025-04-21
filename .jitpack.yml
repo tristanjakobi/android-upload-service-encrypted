@@ -3,24 +3,15 @@ jdk:
 
 before_install:
   - chmod +x gradlew
-  - ./gradlew --version
-  - ls -la
-  - echo "ANDROID_HOME: $ANDROID_HOME"
-  - echo "ANDROID_SDK_ROOT: $ANDROID_SDK_ROOT"
-  - echo "ANDROID_NDK_HOME: $ANDROID_NDK_HOME"
 
 install:
-  - ./gradlew :uploadservice:clean
-  - ./gradlew :uploadservice:assembleRelease --info --stacktrace
-  - ./gradlew :uploadservice:generatePomFileForReleasePublication --info --stacktrace
+  - ./gradlew :uploadservice:assembleRelease
 
 build:
-  - ./gradlew :uploadservice:publishToMavenLocal --info --stacktrace
-  - ls -la uploadservice/build/outputs/aar/
-  - ls -la ~/.m2/repository/com/github/tristanjakobi/
+  - ./gradlew :uploadservice:publishToMavenLocal
 
 env:
   ANDROID_HOME: /usr/local/android-sdk
   ANDROID_SDK_ROOT: /usr/local/android-sdk
   ANDROID_NDK_HOME: /usr/local/android-ndk
-  GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.debug=true"
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
