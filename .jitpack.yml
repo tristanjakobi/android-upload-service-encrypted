@@ -3,6 +3,7 @@ jdk:
 
 before_install:
   - chmod +x gradlew
+  - echo "sdk.dir=/usr/local/android-sdk" > local.properties
 
 install:
   - ./gradlew :uploadservice:clean
