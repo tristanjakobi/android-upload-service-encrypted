@@ -16,3 +16,4 @@ env:
   SKIP_JAVADOC: 1
   ANDROID_SDK_ROOT: /usr/local/android-sdk
   ANDROID_HOME: /usr/local/android-sdk
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=false"
