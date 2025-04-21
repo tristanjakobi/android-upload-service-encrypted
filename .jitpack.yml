@@ -9,3 +9,4 @@ install:
   - ./gradlew assembleRelease
   - ./gradlew releaseSourcesJar
   - ./gradlew generatePomFileForReleasePublication
+  - ./gradlew :uploadservice:publishToMavenLocal
